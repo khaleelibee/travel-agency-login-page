@@ -10,8 +10,15 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: url(/Assets/Images/yves-alarie-9PuMlCffmhk-unsplash.jpg);
+    background-size: 100%;
 }
-
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 .left-side :first-child{
     font-family: Qurova;
 }
