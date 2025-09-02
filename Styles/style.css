@@ -124,3 +124,80 @@ input{
     border: 0;
     padding-left: 0.5rem;
 }
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 0;
+    }
+    .left-side {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .left-side :first-child {
+        font-size: 2.2rem;
+    }
+    .left-side :nth-child(2) {
+        font-size: 3rem;
+        width: 100%;
+    }
+    .left-side :nth-child(3),
+    .left-side :last-child {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .right-side {
+        width: 90vw;
+        height: auto;
+        padding: 2rem 1rem;
+        margin: 0 auto;
+    }
+}
+
+/* Hide extra texts and shrink glassmorphism box on mobile */
+@media (max-width: 600px) {
+    .container {
+        min-height: 100vh;
+        height: auto;
+        overflow: auto;
+        padding: 1rem 0;
+    }
+    .left-side p:nth-child(3),
+    .left-side p:nth-child(4) {
+        display: none;
+    }
+    .right-side {
+        width: 85vw;
+        max-width: 350px;
+        padding: 1rem 0.5rem;
+        border-radius: 10px;
+    }
+    .container {
+        padding: 1rem 0;
+    }
+    .right-side {
+        width: 100vw;
+        padding: 1rem 0.5rem;
+        border-radius: 10px;
+    }
+    .left-side :first-child {
+        font-size: 1.5rem;
+    }
+    .left-side :nth-child(2) {
+        font-size: 2rem;
+    }
+    .left-side :nth-child(3),
+    .left-side :last-child {
+        font-size: 0.9rem;
+    }
+    input, button {
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .divider {
+        padding: 0 0.5rem;
+        gap: 0.5rem;
+    }
+}
